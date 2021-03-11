@@ -10690,11 +10690,11 @@ p {
 }
 
 hr {
-  width: 50px;
+  width: 50px !important;
   height: 4px !important;
-  background: #f39c12;
-  margin: 0px auto;
-  opacity: 1;
+  background: #f39c12 !important;
+  margin: 0px auto !important;
+  opacity: 1 !important;
 }
 
 .far, .about-us__skills-icon, .fas {
@@ -11078,7 +11078,7 @@ header .nav-link:hover {
   opacity: 1;
 }
 .about-us .about-us__skills .about-us__skills-img .iphad {
-  transform: translate(0, 100%);
+  transform: translate(0, 50%);
   transition: all 0.8s ease 0s;
   opacity: 0;
 }
@@ -11161,7 +11161,7 @@ header .nav-link:hover {
 
 /*Separator*/
 .separator {
-  background: url(../img/bg/rectangle_125_191.png) no-repeat center fixed;
+  background: url(../img/bg/rectangle_125_191.png) no-repeat center center;
   position: relative;
   width: 100%;
   height: 700px;
@@ -11228,13 +11228,13 @@ header .nav-link:hover {
   transition: all ease-in-out 0.2s;
 }
 .team .team__col:hover hr {
-  background-color: #e74c3c;
+  background-color: #e74c3c !important;
   transition: all ease-in-out 0.2s;
 }
 .team .team__col hr {
-  width: 20px;
-  height: 4px;
-  background-color: #cccccc;
+  width: 20px !important;
+  height: 4px !important;
+  background-color: #cccccc !important;
 }
 .team .team__col .social a {
   color: #999999;
@@ -11262,22 +11262,22 @@ header .nav-link:hover {
   color: #999999;
 }
 .team .team__col:nth-child(1) {
-  transform: translate(0px, 100%);
+  transform: translate(0px, 50%);
   opacity: 0;
   transition: all 0.8s ease 0s;
 }
 .team .team__col:nth-child(2) {
-  transform: translate(0px, 100%);
+  transform: translate(0px, 50%);
   opacity: 0;
   transition: all 0.8s ease 0s;
 }
 .team .team__col:nth-child(3) {
-  transform: translate(0px, 100%);
+  transform: translate(0px, 50%);
   opacity: 0;
   transition: all 0.8s ease 0s;
 }
 .team .team__col:nth-child(4) {
-  transform: translate(0px, 100%);
+  transform: translate(0px, 50%);
   opacity: 0;
   transition: all 0.8s ease 0s;
 }

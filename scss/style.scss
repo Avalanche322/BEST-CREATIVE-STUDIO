@@ -60,11 +60,11 @@ p{
 	color: #737373;
 }
 hr{
-	width: 50px;
+	width: 50px !important;
 	height: 4px !important;
-	background: #f39c12;
-	margin: 0px auto;
-	opacity: 1;
+	background: #f39c12 !important;
+	margin: 0px auto !important;
+	opacity: 1 !important;
 }
 .far, .about-us__skills-icon,.fas{
 	font-size: 50px;
@@ -450,7 +450,7 @@ header{
 				}
 			}
 			.iphad{
-				transform: translate(0, 100%);
+				transform: translate(0, 50%);
 				transition: all 0.8s ease 0s;
 				opacity: 0;
 				&._active{
@@ -598,14 +598,14 @@ header{
 			border-top: 4px solid #f39c12;
 			transition: all ease-in-out 0.2s;
 			hr{
-			background-color: #e74c3c;
+			background-color: #e74c3c !important;
 			transition: all ease-in-out 0.2s;
 		}
 		}
 		hr{
-			width: 20px;
-			height: 4px;
-			background-color: #cccccc;
+			width: 20px !important;
+			height: 4px !important;
+			background-color: #cccccc !important;
 			
 		}
 		.social{
@@ -637,22 +637,22 @@ header{
 			color: #999999;
 		}
 		&:nth-child(1){
-			transform: translate(0px, 100%);
+			transform: translate(0px, 50%);
 			opacity: 0;
 			transition: all 0.8s ease 0s;
 		}
 		&:nth-child(2){
-			transform: translate(0px, 100%);
+			transform: translate(0px, 50%);
 			opacity: 0;
 			transition: all 0.8s ease 0s;
 		}
 		&:nth-child(3){
-			transform: translate(0px, 100%);
+			transform: translate(0px, 50%);
 			opacity: 0;
 			transition: all 0.8s ease 0s;
 		}
 		&:nth-child(4){
-			transform: translate(0px, 100%);
+			transform: translate(0px, 50%);
 			opacity: 0;
 			transition: all 0.8s ease 0s;
 		}
