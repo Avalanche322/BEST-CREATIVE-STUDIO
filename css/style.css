@@ -10929,11 +10929,12 @@ header .nav-item:first-child:before {
 }
 header .navbar-brand {
   font-family: Montserrat;
+  text-decoration: none;
   font-size: 45px;
   line-height: 25px;
   font-weight: 700;
   text-transform: uppercase;
-  padding-top: 60px;
+  padding-top: 50px;
   width: 150px;
   height: 150px;
   background-color: rgba(255, 255, 255, 0);
@@ -10984,7 +10985,7 @@ header .nav-link:hover {
   text-transform: uppercase;
   color: #ffffff;
 }
-.prevue .prevue__content h1, .prevue .prevue__content .h1 {
+.prevue .prevue__content h2, .prevue .prevue__content .h2 {
   font-size: 70px;
   line-height: 80px;
   font-weight: 700;
