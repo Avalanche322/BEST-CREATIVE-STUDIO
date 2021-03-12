@@ -11183,8 +11183,10 @@ header .nav-link:hover {
 .qoute .qoute__text .qoute__text-border:before {
   content: "";
   width: 50px;
+  display: inline-block;
   height: 4px;
-  color: #f39c12;
+  background-color: #f39c12;
+  z-index: 10;
 }
 .qoute .qoute__text .qoute__name {
   font-size: 24px;
@@ -11228,14 +11230,9 @@ header .nav-link:hover {
   border-top: 4px solid #f39c12;
   transition: all ease-in-out 0.2s;
 }
-.team .team__col:hover hr {
-  background-color: #e74c3c !important;
-  transition: all ease-in-out 0.2s;
-}
-.team .team__col hr {
-  width: 20px !important;
-  height: 4px !important;
-  background-color: #cccccc !important;
+.team .team__col:hover small:after, .team .team__col:hover .small:after {
+  background-color: #e74c3c;
+  transition: all ease-in-out 0.6s;
 }
 .team .team__col .social a {
   color: #999999;
@@ -11261,6 +11258,14 @@ header .nav-link:hover {
   font-weight: 400;
   text-transform: none;
   color: #999999;
+}
+.team .team__col small:after, .team .team__col .small:after {
+  content: "";
+  display: inline-block;
+  margin: 15px 0;
+  width: 20px;
+  height: 4px;
+  background-color: #cccccc;
 }
 .team .team__col:nth-child(1) {
   transform: translate(0px, 50%);
@@ -11415,16 +11420,11 @@ header .nav-link:hover {
   border: none;
   transform: translateY(-10px);
   transition: all ease-in-out 0.2s;
+  background-color: #f39c12;
 }
-.service .service__part2 .service__part2-price .PricingTable:hover .PricingTable-header {
-  transition: all ease-in-out 0.2s;
-  background: #f39c12;
-}
-.service .service__part2 .service__part2-price .PricingTable:hover .PricingTable-header h4, .service .service__part2 .service__part2-price .PricingTable:hover .PricingTable-header .h4, .service .service__part2 .service__part2-price .PricingTable:hover .PricingTable-header p {
-  color: #fff;
-}
-.service .service__part2 .service__part2-price .PricingTable:hover .PricingTable-header hr {
-  background: #fff;
+.service .service__part2 .service__part2-price .PricingTable:hover h4:after, .service .service__part2 .service__part2-price .PricingTable:hover .h4:after {
+  background-color: #fff !important;
+  transition: all ease-in-out 0.6s;
 }
 .service .service__part2 .service__part2-price .PricingTable:hover li:nth-child(2n+1) {
   background: #e6e6e6;
@@ -11434,7 +11434,7 @@ header .nav-link:hover {
 }
 .service .service__part2 .service__part2-price .PricingTable:hover .btn-outline-primary {
   transition: all ease-in-out 0.2s;
-  background: #f39c12;
+  background-color: #f39c12;
   color: #fff;
 }
 .service .service__part2 .service__part2-price .PricingTable .PricingTable-header {
@@ -11448,8 +11448,15 @@ header .nav-link:hover {
   text-transform: uppercase;
   color: #0d0d0d;
 }
-.service .service__part2 .service__part2-price .PricingTable .PricingTable-header hr {
-  height: 2px !important;
+.service .service__part2 .service__part2-price .PricingTable .PricingTable-header p {
+  line-height: 25px;
+}
+.service .service__part2 .service__part2-price .PricingTable .PricingTable-header h4:after, .service .service__part2 .service__part2-price .PricingTable .PricingTable-header .h4:after {
+  content: "";
+  display: inline-block;
+  width: 50px;
+  height: 2px;
+  background-color: #f39c12;
 }
 .service .service__part2 .service__part2-price .PricingTable .PricingTable-content ul {
   list-style: none;
@@ -11505,13 +11512,20 @@ header .nav-link:hover {
   line-height: 60px;
   color: #ffffff;
 }
+.testimanial .testimanial__content .testimanial__name:after {
+  content: "";
+  display: inline-block;
+  width: 50px;
+  height: 4px;
+  background-color: #f39c12;
+}
 .testimanial .testimanial__content .testimanial__text {
   font-size: 22px;
   line-height: 30px;
   font-weight: 300;
   font-style: italic;
   color: #ffffff;
-  margin: 38px 0px 29px 0px;
+  margin: 28px 0px 29px 0px;
 }
 .testimanial .testimanial__content img {
   border: 2px solid #fff;

@@ -555,8 +555,10 @@ header{
 		.qoute__text-border:before{
 		content: '';
 		width: 50px;
+		display: inline-block;
 		height: 4px;
-		color: #f39c12;
+		background-color: #f39c12;
+		z-index: 10;
 		}
 		.qoute__name{
 			font-size: 24px;
@@ -600,16 +602,12 @@ header{
 			background: #f0f0f0;
 			border-top: 4px solid #f39c12;
 			transition: all ease-in-out 0.2s;
-			hr{
-			background-color: #e74c3c !important;
-			transition: all ease-in-out 0.2s;
-		}
-		}
-		hr{
-			width: 20px !important;
-			height: 4px !important;
-			background-color: #cccccc !important;
-			
+			small{
+				&:after{
+					background-color: #e74c3c;
+					transition: all ease-in-out 0.6s;
+				}
+			}
 		}
 		.social{
 			a{
@@ -638,6 +636,14 @@ header{
 			font-weight: 400;
 			text-transform: none;
 			color: #999999;
+			&:after{
+				content: '';
+				display: inline-block;
+				margin: 15px 0;
+				width: 20px;
+				height: 4px;
+				background-color: #cccccc;
+			}
 		}
 		&:nth-child(1){
 			transform: translate(0px, 50%);
@@ -789,14 +795,11 @@ header{
 				border: none;
 				transform: translateY(-10px);	
 				transition: all ease-in-out 0.2s;
-				.PricingTable-header{
-					transition: all ease-in-out 0.2s;
-					background: #f39c12;
-					h4,p{
-						color: #fff;
-					}
-					hr{
-						background: #fff;
+				background-color: #f39c12;
+				h4{
+					&:after{
+						background-color: #fff !important;
+						transition: all ease-in-out 0.6s;
 					}
 				}
 				li{
@@ -809,7 +812,7 @@ header{
 				}
 				.btn-outline-primary {
 					transition: all ease-in-out 0.2s;
-					background: #f39c12;
+					background-color: #f39c12;
 					color: #fff;
 				}
 			}
@@ -823,8 +826,17 @@ header{
 						text-transform: uppercase;
 						color: #0d0d0d;
 					}
-					hr{
-						height: 2px !important;
+					p{
+						line-height: 25px;
+					}
+					h4{
+						&:after{
+							content: '';
+							display: inline-block;
+							width: 50px;
+							height: 2px;
+							background-color: #f39c12;
+						}
 					}
 				}
 			.PricingTable-content {
@@ -886,6 +898,13 @@ header{
 		font-size: 24px;
 		line-height: 60px;
 		color: #ffffff;
+			&:after{
+				content: '';
+				display: inline-block;
+				width: 50px;
+				height: 4px;
+				background-color: #f39c12;
+			}
 		}
 		.testimanial__text{
 			font-size: 22px;
@@ -894,7 +913,7 @@ header{
 			font-style: italic;
 			color: #ffffff;
 
-			margin: 38px 0px 29px 0px;
+			margin: 28px 0px 29px 0px;
 		}
 		img{
 			border: 2px solid #fff;
