@@ -11723,14 +11723,14 @@ header .nav-link:hover {
   border-color: #f39c12;
   transition: all 0.8s ease 0s;
 }
-.tweet .tweet__content p {
+.tweet .tweet__content h3, .tweet .tweet__content .h3 {
   font-size: 22px;
   line-height: 33px;
   font-weight: 700;
   color: #ffffff;
   margin: 38px 0px -15px 0px;
 }
-.tweet .tweet__content p span {
+.tweet .tweet__content h3 span, .tweet .tweet__content .h3 span {
   color: #f39c12;
 }
 .tweet .tweet__content small, .tweet .tweet__content .small {
