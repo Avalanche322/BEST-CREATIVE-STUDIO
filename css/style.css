@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/*Import*/
+/*====================Import==========================*/
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
@@ -10631,7 +10631,7 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-/*Common*/
+/*====================Common==========================*/
 body {
   font-family: "Open Sans", sans-serif !important;
 }
@@ -10689,14 +10689,6 @@ p {
   color: #737373;
 }
 
-hr {
-  width: 50px !important;
-  height: 4px !important;
-  background: #f39c12 !important;
-  margin: 0px auto !important;
-  opacity: 1 !important;
-}
-
 .far, .about-us__skills-icon, .fas {
   font-size: 50px;
   text-align: center;
@@ -10722,7 +10714,7 @@ hr {
   height: 100vh;
 }
 
-/*Loader*/
+/*====================Preloader==========================*/
 .visible {
   visibility: visible;
   opacity: 1;
@@ -10861,12 +10853,12 @@ hr {
   }
 }
 
-/*Header*/
+/*====================Header==========================*/
 header {
   position: absolute;
   width: 100%;
   z-index: 10;
-  padding-top: 54px;
+  padding-top: 24px;
   /*header-menu for mobile*/
 }
 header .navbar-toggler {
@@ -10951,7 +10943,7 @@ header .nav-link:hover {
   color: #0d0d0d !important;
 }
 
-/*Prevue*/
+/*====================Prevue==========================*/
 .prevue {
   background: url(../img/bg/rectangle_5_copy_1839.png) center no-repeat;
   height: 1100px;
@@ -10960,7 +10952,7 @@ header .nav-link:hover {
 .prevue .prevue__content {
   padding: 200px 0px;
   position: relative;
-  top: 100px;
+  top: 50px;
   height: 1100px;
   opacity: 0;
   animation: opacity 2s ease-in-out forwards;
@@ -10972,7 +10964,7 @@ header .nav-link:hover {
   background-color: #f39c12;
   border: none;
   position: relative;
-  top: 50px;
+  top: 20px;
 }
 .prevue .prevue__content .btn:hover {
   background: none;
@@ -11009,10 +11001,10 @@ header .nav-link:hover {
   transform: translate(0px, 0px);
 }
 .prevue .carousel-indicators {
-  bottom: 33.33%;
+  bottom: 37%;
 }
 
-/*About-us*/
+/*====================About Us==========================*/
 .about-us {
   padding: 0px 0px 120px 0px;
 }
@@ -11069,7 +11061,7 @@ header .nav-link:hover {
 .about-us .about-us__skills .about-us__skills-img .iphone {
   position: relative;
   top: 74px;
-  right: -40px;
+  right: -30px;
   transform: translate(-100%, 0);
   transition: all 0.8s ease 0s;
   opacity: 0;
@@ -11160,7 +11152,7 @@ header .nav-link:hover {
   font-weight: 300;
 }
 
-/*Separator*/
+/*====================Separator==========================*/
 .separator {
   background: url(../img/bg/rectangle_125_191.png) no-repeat center center;
   position: relative;
@@ -11172,7 +11164,7 @@ header .nav-link:hover {
   font-weight: 700;
 }
 
-/*Qoute*/
+/*====================Qoute==========================*/
 .qoute {
   padding: 220px 0;
 }
@@ -11180,10 +11172,11 @@ header .nav-link:hover {
   opacity: 0;
   transition-duration: 4s;
 }
-.qoute .qoute__text .qoute__text-border:before {
+.qoute .qoute__text .qoute__name:before {
   content: "";
   width: 50px;
-  display: inline-block;
+  display: block;
+  margin: 100px auto 0;
   height: 4px;
   background-color: #f39c12;
   z-index: 10;
@@ -11210,14 +11203,13 @@ header .nav-link:hover {
   opacity: 1;
 }
 
-/*Team*/
+/*====================Team==========================*/
 .team {
   padding: 0px 0px 100px 0px;
 }
 .team .team__col {
   padding: 26px 19px 30px 19px;
   border-top: 4px solid #fff;
-  margin: 150px 0px 0px 0px;
 }
 .team .team__col:first-child {
   margin-left: 0;
@@ -11292,7 +11284,7 @@ header .nav-link:hover {
   opacity: 1;
 }
 
-/*Facts*/
+/*====================Facts==========================*/
 .facts {
   padding: 180px 0;
 }
@@ -11339,7 +11331,7 @@ header .nav-link:hover {
   opacity: 1;
 }
 
-/*Services*/
+/*====================Service==========================*/
 .service {
   padding: 0px 0px 100px 0px;
 }
@@ -11502,7 +11494,7 @@ header .nav-link:hover {
   opacity: 1;
 }
 
-/*Testimanial*/
+/*====================Testimanial==========================*/
 .testimanial {
   padding: 200px 0;
 }
@@ -11544,7 +11536,7 @@ header .nav-link:hover {
   }
 }
 
-/*Portfolio*/
+/*====================Portfolio==========================*/
 .portfolio {
   padding: 0px 0px 220px 0px;
 }
@@ -11634,12 +11626,6 @@ header .nav-link:hover {
 .portfolio .portfolio__work .active {
   color: #f39c12;
 }
-.portfolio .portfolio__work .col-auto {
-  margin: 20px 0px 0px 0px;
-}
-.portfolio .portfolio__work .mt-md-portfolio__work {
-  margin: 80px 0px 0px 0px;
-}
 .portfolio .portfolio__work .portfolio__work-body:hover .portfolio__work-content {
   transform: rotateY(-180deg);
 }
@@ -11714,7 +11700,7 @@ header .nav-link:hover {
   transform: rotate(180deg);
 }
 
-/*Tweet*/
+/*====================Tweet==========================*/
 .tweet {
   padding: 200px 0px;
 }
@@ -11758,7 +11744,7 @@ header .nav-link:hover {
   opacity: 1;
 }
 
-/*Blog*/
+/*====================Blog==========================*/
 .blog .blog__content {
   margin: 150px 0px 0px 0px;
 }
@@ -11816,7 +11802,7 @@ header .nav-link:hover {
   opacity: 1;
 }
 
-/*Our clients*/
+/*====================Our Client==========================*/
 .our-clients {
   padding: 200px 0px;
 }
@@ -11881,7 +11867,7 @@ header .nav-link:hover {
   opacity: 1;
 }
 
-/*contact*/
+/*====================Contact==========================*/
 .contact .contact__content {
   margin: 150px 0px 0px 0px;
 }
@@ -12045,7 +12031,7 @@ header .nav-link:hover {
   opacity: 1;
 }
 
-/*Footer*/
+/*====================Footer==========================*/
 footer {
   height: 100px;
   width: 100%;
@@ -12083,7 +12069,13 @@ footer .footer__media a:last-child {
   margin-right: 0;
 }
 
-/*Adaptive*/
+/*====================Adaptive==========================*/
+@media (max-width: 1200px) {
+  /*Our Client*/
+  .our-clients {
+    padding: 100px 0px;
+  }
+}
 @media (max-width: 1082px) {
   /*Qoute*/
   .qoute .qoute__name {
@@ -12127,15 +12119,19 @@ footer .footer__media a:last-child {
     color: #0d0d0d !important;
   }
   header .navbar-brand {
-    font-size: 30px;
-    padding-top: 40px;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
+    padding-top: 25px;
+  }
+  header .navbar-brand h1, header .navbar-brand .h1 {
+    font-size: 25px;
+    line-height: 25px;
   }
 
   /*Prevue*/
   .prevue .prevue__content {
     top: 0px;
+    padding-top: 150px;
   }
 
   /*About Us*/
@@ -12161,24 +12157,23 @@ footer .footer__media a:last-child {
   .our-clients {
     padding: 100px 0px 0px 0px;
   }
-}
-@media (max-width: 780px) {
+
   /*Facts*/
   .facts {
     padding: 180px 0;
   }
   .facts .fas, .facts .far {
-    font-size: 40px;
-    padding-top: 40px;
-    margin-bottom: 5px;
-    width: 120px;
-    height: 120px;
+    font-size: 35px !important;
+    padding-top: 45px !important;
+    margin-bottom: 15px !important;
+    width: 120px !important;
+    height: 120px !important;
   }
   .facts .facts__count {
-    font-size: 35px;
+    font-size: 25px !important;
   }
   .facts .facts__name {
-    font-size: 20px;
+    font-size: 18px !important;
   }
 }
 @media (max-width: 768px) {
@@ -12203,13 +12198,31 @@ footer .footer__media a:last-child {
   .prevue .prevue__content .btn {
     top: 20px;
   }
-  .prevue .carousel-indicators {
-    bottom: 45%;
-  }
 
   /*About Us*/
   .about-us .about-us__story .far {
     margin: 0px 0px 20px 0px;
+  }
+  .about-us .about-us__skills .about-us__skills-img .iphone {
+    position: static;
+  }
+
+  /*Qoute*/
+  .qoute {
+    padding: 100px 0;
+  }
+  .qoute .qoute__text .qoute__name:before {
+    margin-top: 50px;
+  }
+  .qoute .qoute__text span {
+    font-size: 80px;
+    line-height: 60px;
+  }
+
+  /*Our client*/
+  .our-clients .our-clients__img {
+    width: 200px;
+    height: 150px;
   }
 }
 @media (max-width: 576px) {
@@ -12217,8 +12230,14 @@ footer .footer__media a:last-child {
   .about-us .about-us__skills .about-us__skills-icon {
     margin: 40px 0px 20px 0px;
   }
-  .about-us .about-us__skills .about-us__skills-img .iphone {
-    position: static;
+
+  /*Qoute*/
+  .qoute .qoute__text p {
+    font-size: 35px;
+  }
+  .qoute .qoute__text span {
+    font-size: 60px;
+    line-height: 60px;
   }
 
   /*Prevue*/
@@ -12243,6 +12262,11 @@ footer .footer__media a:last-child {
   }
 
   /*Facts*/
+  .facts .facts__col .fas, .facts .facts__col .far {
+    margin-bottom: 5px;
+  }
+
+  /*Facts*/
   .facts {
     padding: 130px 0 0px 0px;
   }
@@ -12262,17 +12286,32 @@ footer .footer__media a:last-child {
   }
 
   /*Our client*/
+  .our-clients {
+    padding: 200px 0px;
+  }
   .our-clients .our-clients__img {
-    width: 200px;
+    width: 150px;
     height: 100px;
   }
 }
 @media (max-width: 422px) {
+  /*Our client*/
+  /*Our client*/
+  .our-clients {
+    padding: 70px 0px;
+  }
+  .our-clients .our-clients__img {
+    width: 150px;
+    height: 100px;
+  }
   .our-clients h3, .our-clients .h3 {
     margin: 0;
   }
-  .our-clients .our-clients__img {
-    margin: 0 auto;
+
+  /*Prevue*/
+  .prevue .prevue__content h2, .prevue .prevue__content .h2 {
+    font-size: 50px;
+    line-height: 60px;
   }
 }
 @media (max-width: 340px) {

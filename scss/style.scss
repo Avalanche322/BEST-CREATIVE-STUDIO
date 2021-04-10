@@ -1,11 +1,11 @@
-/*Import*/
+/*====================Import==========================*/
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @import "../node_modules/bootstrap/scss/bootstrap";
 
-/*Common*/
+/*====================Common==========================*/
 body{
  font-family: 'Open Sans', sans-serif !important;
 }
@@ -59,13 +59,6 @@ p{
 	font-weight: 400;
 	color: #737373;
 }
-hr{
-	width: 50px !important;
-	height: 4px !important;
-	background: #f39c12 !important;
-	margin: 0px auto !important;
-	opacity: 1 !important;
-}
 .far, .about-us__skills-icon,.fas{
 	font-size: 50px;
 	text-align: center;
@@ -90,7 +83,7 @@ hr{
   overflow: hidden;
   height: 100vh;
 }
-/*Loader*/
+/*====================Preloader==========================*/
 .visible {
   visibility: visible;
   opacity: 1;
@@ -229,12 +222,12 @@ $path-length: 157px;
    }
 }
 }
-/*Header*/
+/*====================Header==========================*/
 header{
 	position: absolute;
 	width: 100%;
 	z-index: 10;
-	padding-top: 54px;
+	padding-top: 24px;
 	.navbar-toggler{
 		border: none;
 	}
@@ -325,7 +318,7 @@ header{
 		}
 	}
 }
-/*Prevue*/
+/*====================Prevue==========================*/
 .prevue{
 	background: url(../img/bg/rectangle_5_copy_1839.png) center no-repeat;
 	height: 1100px;
@@ -333,7 +326,7 @@ header{
 		.prevue__content{
 			padding: 200px 0px;
 			position: relative;
-			top: 100px;
+			top: 50px;
 			height: 1100px;
 			.btn{
 				width: 160px;
@@ -342,7 +335,7 @@ header{
 				background-color: #f39c12;
 				border:none;
 				position: relative;
-				top: 50px;
+				top: 20px;
 				&:hover{
 					background: none;
 					transition: all 0.3s ease 0s;
@@ -382,10 +375,10 @@ header{
 			}
 		}
 		.carousel-indicators{
-			bottom: 33.33%;
+			bottom: 37%;
 		}
 }
-/*About-us*/
+/*====================About Us==========================*/
 .about-us{
 	padding: 0px 0px 120px 0px;
 	.about-us__story{
@@ -442,7 +435,7 @@ header{
 			.iphone{
 				position: relative;
 				top: 74px;
-				right: -40px;
+				right: -30px;
 
 				transform: translate(-100%, 0);
 				transition: all 0.8s ease 0s;
@@ -536,7 +529,7 @@ header{
 		}
 	}
 }
-/*Separator*/
+/*====================Separator==========================*/
 .separator{
 	background: url(../img/bg/rectangle_125_191.png) no-repeat center center;
 	position: relative;
@@ -548,14 +541,15 @@ header{
 	line-height: 60px;
 	font-weight: 700;
 }
-/*Qoute*/
+/*====================Qoute==========================*/
 .qoute{
 	padding: 220px 0;
 	.qoute__text{
-		.qoute__text-border:before{
+		.qoute__name:before{
 		content: '';
 		width: 50px;
-		display: inline-block;
+		display: block;
+		margin: 100px auto 0;
 		height: 4px;
 		background-color: #f39c12;
 		z-index: 10;
@@ -585,13 +579,13 @@ header{
 		}
 	}
 }
-/*Team*/
+/*====================Team==========================*/
 .team{
 	padding: 0px 0px 100px 0px;
 	.team__col{
 		padding: 26px 19px 30px 19px;
 		border-top: 4px solid #fff;
-		margin: 150px 0px 0px 0px;
+		
 		&:first-child{
 			margin-left: 0;
 		}
@@ -671,7 +665,7 @@ header{
 		}
 	}
 }
-/*Facts*/
+/*====================Facts==========================*/
 .facts{
 	padding: 180px 0;
 	.facts__col{
@@ -717,7 +711,7 @@ header{
 		}
 	}
 }
-/*Services*/
+/*====================Service==========================*/
 .service{
 	padding: 0px 0px 100px 0px;
 	h3{
@@ -895,7 +889,7 @@ header{
 		}
 	}
 }
-/*Testimanial*/
+/*====================Testimanial==========================*/
 .testimanial{
 	padding: 200px 0;
 	.testimanial__content{
@@ -937,7 +931,7 @@ header{
 		} 
 	}
 }
-/*Portfolio*/
+/*====================Portfolio==========================*/
 .portfolio{
 	padding: 0px 0px 220px 0px;
 	.carousel{
@@ -1026,12 +1020,6 @@ header{
 		.active{
 			color: #f39c12;
 		}
-		.col-auto{
-			margin: 20px 0px 0px 0px;
-		}
-		.mt-md-portfolio__work{
-			margin: 80px 0px 0px 0px;
-		}
 		.portfolio__work-body{
 			&:hover{
 				.portfolio__work-content{
@@ -1115,7 +1103,7 @@ header{
 		}
 	}
 }
-/*Tweet*/
+/*====================Tweet==========================*/
 .tweet{
 	padding: 200px 0px;
 	.tweet__content{
@@ -1158,7 +1146,7 @@ header{
 		}
 	}
 }
-/*Blog*/
+/*====================Blog==========================*/
 .blog{
 	.blog__content{
 		margin: 150px 0px 0px 0px;
@@ -1219,7 +1207,7 @@ header{
 		}
 	}
 }
-/*Our clients*/
+/*====================Our Client==========================*/
 .our-clients{
 	padding: 200px 0px;
 	h3{
@@ -1284,7 +1272,7 @@ header{
 		} 
 	}
 }
-/*contact*/
+/*====================Contact==========================*/
 .contact{
 	.contact__content{
 		margin: 150px 0px 0px 0px;
@@ -1456,7 +1444,7 @@ header{
 		} 
 	}
 }
-/*Footer*/
+/*====================Footer==========================*/
 footer{
 	height: 100px;
 	width: 100%;
@@ -1495,7 +1483,13 @@ footer{
 		}
 	}
 }
-/*Adaptive*/
+/*====================Adaptive==========================*/
+@media (max-width: 1200px) {
+	/*Our Client*/
+	.our-clients{
+		padding: 100px 0px;
+	}
+}
 @media(max-width: 1082px){
 	/*Qoute*/
 .qoute{
@@ -1539,16 +1533,20 @@ footer{
 			}
 		}
 		.navbar-brand{
-			font-size: 30px;			
-			padding-top: 40px;
-			width: 100px;
-			height: 100px;
-		}
+			width: 80px;
+			height: 80px;
+			padding-top: 25px;
+			h1{
+				font-size: 25px;
+				line-height: 25px;	
+			}
+		}	
 	}
 	/*Prevue*/
 	.prevue{
 		.prevue__content{
 			top: 0px;
+			padding-top: 150px;
 		}
 	}
 	/*About Us*/
@@ -1581,23 +1579,21 @@ footer{
 	.our-clients{
 		padding: 100px 0px 0px 0px;
 	}
-}
-@media (max-width: 780px){
 	/*Facts*/
-.facts{
-	padding: 180px 0;
+	.facts{
+		padding: 180px 0;
 		.fas, .far{
-			font-size: 40px;
-			padding-top: 40px;
-			margin-bottom: 5px;
-			width: 120px;
-			height: 120px;
+			font-size: 35px !important;
+			padding-top: 45px !important;
+			margin-bottom: 15px !important;
+			width: 120px !important;
+			height: 120px !important;
 		}
 		.facts__count{
-			font-size: 35px;
+			font-size: 25px !important;
 		}
 		.facts__name{
-			font-size: 20px;
+			font-size: 18px !important;
 		}	
 	}
 }
@@ -1632,9 +1628,7 @@ footer{
 				top: 20px;
 			}
 		}
-		.carousel-indicators{
-			bottom: 45%;
-		}
+		
 	}
 	/*About Us*/
 	.about-us{
@@ -1642,6 +1636,33 @@ footer{
 			.far{
 				margin: 0px 0px 20px 0px;
 			}
+		}
+		.about-us__skills{
+			.about-us__skills-img{
+				.iphone{
+					position: static;
+				}
+			}
+		}
+	}
+	/*Qoute*/
+	.qoute{
+		padding: 100px 0;
+	.qoute__text{
+		.qoute__name:before{
+			margin-top: 50px;
+		}
+		span{
+			font-size: 80px;
+			line-height: 60px;
+		}
+	}
+	}
+	/*Our client*/
+	.our-clients{
+		.our-clients__img{
+			width: 200px;
+			height: 150px;
 		}
 	}
 }
@@ -1652,12 +1673,19 @@ footer{
 			.about-us__skills-icon{
 				margin: 40px 0px 20px 0px;
 			}
-			.about-us__skills-img{
-				.iphone{
-					position: static;
-				}
-			}
 		}
+	}
+		/*Qoute*/
+	.qoute{
+	.qoute__text{
+		p{
+			font-size: 35px;
+		}
+		span{
+			font-size: 60px;
+			line-height: 60px;
+		}
+	}
 	}
 	/*Prevue*/
 	.prevue{
@@ -1684,6 +1712,14 @@ footer{
 	}
 	/*Facts*/
 	.facts{
+	.facts__col{
+		.fas, .far{
+			margin-bottom: 5px;
+		}		
+	}
+}
+	/*Facts*/
+	.facts{
 		padding: 130px 0 0px 0px;
 	}
 	/*Services*/
@@ -1704,25 +1740,39 @@ footer{
 	}
 	/*Our client*/
 	.our-clients{
+		padding: 200px 0px;
 		.our-clients__img{
-			width: 200px;
+			width: 150px;
 			height: 100px;
 		}
 	}
 }
 @media(max-width: 422px){
+	/*Our client*/
+	/*Our client*/
 	.our-clients{
+		padding: 70px 0px;
+		.our-clients__img{
+			width: 150px;
+			height: 100px;
+		}
 		h3{
 			margin: 0;
 		}
-		.our-clients__img{
-			margin: 0 auto;
+	}
+	/*Prevue*/
+	.prevue{
+		.prevue__content{
+			h2{
+				font-size: 50px;
+				line-height: 60px;
+			}
 		}
 	}
 }
 @media(max-width: 340px){
 	/*Qoute*/
-.qoute{
-	padding: 100px 0px 0px 0px;
-}
+	.qoute{
+		padding: 100px 0px 0px 0px;
+	}
 }

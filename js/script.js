@@ -1,4 +1,4 @@
-/*Preloader*/
+/*====================Preloader==========================*/
 function loadData() {
 	return new Promise((resolve, reject) => {
 		setTimeout(resolve, 2000);
@@ -10,8 +10,7 @@ loadData().then(() => {
 	$('body').removeClass('loading');
 	preloaderEl.classList.remove('visible');
 });
-
-/*Active portfolio nav*/
+/*====================Active portfolio nav==========================*/
 $(function () {
 	$(".portfolio__work-button").on('click', function () {
 		$('.portfolio__work-button').removeClass('active')
@@ -22,7 +21,7 @@ $(function () {
 	})
 });
 
-/*Slider toggle*/
+/*====================Slider toggle==========================*/
 $(".fa-times").click(function () {
 	$(".carousel-inner").toggle("d-none");
 	if ($(this).hasClass('fa-times')) {
@@ -34,7 +33,7 @@ $(".fa-times").click(function () {
 	}
 });
 
-/*Header click menu burger - body lock*/
+/*====================Header click menu burger - body lock==========================*/
 $(document).ready(function () {
 	$('.navbar-toggler').click(function (event) {
 		$('.header__burger').toggleClass('active');
@@ -42,7 +41,7 @@ $(document).ready(function () {
 	});
 });
 
-/*Add style for contact input*/
+/*====================Add style for contact input==========================*/
 $('.form-control').focus(function () {
 	$(this).parent().find('.input-group-text').css({'border-color': '#f39c12', 'color': '#f39c12'});
 	$(this).css('border-color', '#f39c12');
@@ -54,7 +53,7 @@ $('.form-control').focusout(function () {
 	$(this).parent().find('.far').css('color', '#808080');
 });
 
-/*Common Animation*/
+/*====================Animation==========================*/
 const animItems = document.querySelectorAll('._anim-items');
 
 if (animItems.length > 0) {
