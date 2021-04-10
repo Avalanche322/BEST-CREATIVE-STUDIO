@@ -1748,18 +1748,6 @@ footer{
 	}
 }
 @media(max-width: 422px){
-	/*Our client*/
-	/*Our client*/
-	.our-clients{
-		padding: 70px 0px;
-		.our-clients__img{
-			width: 150px;
-			height: 100px;
-		}
-		h3{
-			margin: 0;
-		}
-	}
 	/*Prevue*/
 	.prevue{
 		.prevue__content{
@@ -1767,6 +1755,15 @@ footer{
 				font-size: 50px;
 				line-height: 60px;
 			}
+		}
+	}
+}
+@media (max-width: 360px) {
+	/*Our client*/
+	.our-clients{
+		padding: 100px 0px;
+		h3{
+			margin: 0;
 		}
 	}
 }
