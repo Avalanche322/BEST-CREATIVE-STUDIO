@@ -11187,7 +11187,7 @@ header .nav-link:hover {
   font-weight: 700;
   text-transform: uppercase;
 }
-.qoute .qoute__text p {
+.qoute .qoute__text h2, .qoute .qoute__text .h2 {
   font-size: 45px;
   line-height: 60px;
   font-weight: 700;
