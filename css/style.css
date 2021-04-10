@@ -11607,20 +11607,23 @@ header .nav-link:hover {
 .portfolio .portfolio__work {
   margin-top: 90px;
 }
-.portfolio .portfolio__work a {
+.portfolio .portfolio__work button {
   font-size: 14px;
   line-height: 25px;
   font-weight: 700;
   text-transform: uppercase;
   color: #0d0d0d;
   text-decoration: none;
+  border: none;
+  background: #fff;
+  padding: 0;
 }
-.portfolio .portfolio__work a:after {
+.portfolio .portfolio__work button:after {
   content: "\\\\";
   color: #a6a6a6;
   margin: 0px 20px;
 }
-.portfolio .portfolio__work a:last-child:after {
+.portfolio .portfolio__work button:last-child:after {
   content: none;
 }
 .portfolio .portfolio__work .active {

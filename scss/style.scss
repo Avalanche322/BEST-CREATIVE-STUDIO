@@ -1000,14 +1000,16 @@ header{
 	}
 	.portfolio__work{
 		margin-top: 90px;
-		a{
+		button{
 			font-size: 14px;
 			line-height: 25px;
 			font-weight: 700;
 			text-transform: uppercase;
 			color: #0d0d0d;
 			text-decoration: none;
-			
+			border: none;
+			background: #fff;
+			padding: 0;
 			&:after{
 				content: '\\\\';
 				color: #a6a6a6;
