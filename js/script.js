@@ -20,7 +20,11 @@ $(function () {
 		}
 	})
 });
-
+/*=======================Fixed Header=============================*/
+window.addEventListener('scroll', function () {
+	let header = document.querySelector('header');
+	header.classList.toggle('fixed', window.scrollY > 0);
+});
 /*====================Slider toggle==========================*/
 $(".fa-times").click(function () {
 	$(".carousel-inner").toggle("d-none");
