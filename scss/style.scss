@@ -275,7 +275,7 @@ header{
 		&:before{
 			content: '\\\\';
 			position: relative;
-			top: 10px;
+			//top: 10px;
 			margin: 0 15px;
 		}
 		&:first-child:before{
@@ -305,6 +305,8 @@ header{
 		text-transform: uppercase;
 		color: #ffffff !important;
 		transition: .3s color ease;
+		padding-top: 0;
+		padding-bottom: 0;
 		&:hover{
 			transition: .3s color ease;
 			color: #0d0d0d !important;
@@ -516,7 +518,7 @@ header{
 	&__col{
 		padding: 26px 19px 30px 19px;
 		border-top: 4px solid #fff;
-		transition: .2s border-top ease-out,.2s background-color ease-out !important;
+		transition: .2s border-top ease-out,.2s background-color ease-out;
 		&:first-child{
 			margin-left: 0;
 		}
@@ -1745,21 +1747,29 @@ footer{
 	&__col{
 		transform: translate(0px, 50%);
 		opacity: 0;
-		&:nth-child(1){
-			transition: transform 0.8s ease 0s,opacity 0.8s ease 0s;
+		&:nth-child(1){			
+			transition: transform 0.8s ease 0s,opacity 0.8s ease 0s,
+			.2s border-top ease-out,.2s background-color ease-out;
 		}
 		&:nth-child(2){
-			transition: transform 0.8s ease 0.2s,opacity 0.8s ease 0.2s;
+			transition: transform 0.8s ease 0.1s,opacity 0.8s ease 01s,
+			.2s border-top ease-out,.2s background-color ease-out;
 		}
 		&:nth-child(3){
-			transition: transform 0.8s ease 0.3s,opacity 0.8s ease 0.3s;
+			transition: transform 0.8s ease 0.2s,opacity 0.8s ease 0.2s,
+			.2s border-top ease-out,.2s background-color ease-out;
+		}
+		&:nth-child(3){
+			transition: transform 0.8s ease 0.3s,opacity 0.8s ease 0.3s,
+			.2s border-top ease-out,.2s background-color ease-out;
 		}
 		&:nth-child(4){
-			transition: transform 0.8s ease 0.4s,opacity 0.8s ease 0.4s;
+			transition: transform 0.8s ease 0.4s,opacity 0.8s ease 0.4s,
+			.2s border-top ease-out,.2s background-color ease-out;
 		}
 		&._active{
 			transform: translate(0px, 0px);
-			opacity:1;
+			opacity: 1;
 		}
 	}	
 }
@@ -1788,7 +1798,7 @@ footer{
 /*====================Service==========================*/
 .service{
 	&__part1-col{
-		transform: translate(0px, 120%);
+		transform: translate(0px, 100%);
 		opacity: 0;
 		&:nth-child(1){			
 			transition: transform 0.8s ease 0s,opacity 0.8s ease 0s;

@@ -10906,7 +10906,6 @@ header .nav-item {
 header .nav-item:before {
   content: "\\\\";
   position: relative;
-  top: 10px;
   margin: 0 15px;
 }
 header .nav-item:first-child:before {
@@ -10933,6 +10932,8 @@ header .nav-link {
   text-transform: uppercase;
   color: #ffffff !important;
   transition: 0.3s color ease;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 header .nav-link:hover {
   transition: 0.3s color ease;
@@ -11137,7 +11138,7 @@ header.fixed .navbar-brand h1, header.fixed .navbar-brand .h1 {
 .team__col {
   padding: 26px 19px 30px 19px;
   border-top: 4px solid #fff;
-  transition: 0.2s border-top ease-out, 0.2s background-color ease-out !important;
+  transition: 0.2s border-top ease-out, 0.2s background-color ease-out;
 }
 .team__col:first-child {
   margin-left: 0;
@@ -12278,16 +12279,19 @@ footer .footer__media a:last-child {
     opacity: 0;
   }
   .team__col:nth-child(1) {
-    transition: transform 0.8s ease 0s, opacity 0.8s ease 0s;
+    transition: transform 0.8s ease 0s, opacity 0.8s ease 0s, 0.2s border-top ease-out, 0.2s background-color ease-out;
   }
   .team__col:nth-child(2) {
-    transition: transform 0.8s ease 0.2s, opacity 0.8s ease 0.2s;
+    transition: transform 0.8s ease 0.1s, opacity 0.8s ease 1s, 0.2s border-top ease-out, 0.2s background-color ease-out;
   }
   .team__col:nth-child(3) {
-    transition: transform 0.8s ease 0.3s, opacity 0.8s ease 0.3s;
+    transition: transform 0.8s ease 0.2s, opacity 0.8s ease 0.2s, 0.2s border-top ease-out, 0.2s background-color ease-out;
+  }
+  .team__col:nth-child(3) {
+    transition: transform 0.8s ease 0.3s, opacity 0.8s ease 0.3s, 0.2s border-top ease-out, 0.2s background-color ease-out;
   }
   .team__col:nth-child(4) {
-    transition: transform 0.8s ease 0.4s, opacity 0.8s ease 0.4s;
+    transition: transform 0.8s ease 0.4s, opacity 0.8s ease 0.4s, 0.2s border-top ease-out, 0.2s background-color ease-out;
   }
   .team__col._active {
     transform: translate(0px, 0px);
@@ -12316,7 +12320,7 @@ footer .footer__media a:last-child {
 
   /*====================Service==========================*/
   .service__part1-col {
-    transform: translate(0px, 120%);
+    transform: translate(0px, 100%);
     opacity: 0;
   }
   .service__part1-col:nth-child(1) {

@@ -10,6 +10,11 @@ loadData().then(() => {
 	$('body').removeClass('loading');
 	preloaderEl.classList.remove('visible');
 });
+/*=========================Animation====================================*/
+loadData().then(() => {
+	animOnScroll();
+	window.addEventListener('scroll', animOnScroll);
+});
 /*====================Active portfolio nav==========================*/
 $(function () {
 	$(".portfolio__work-button").on('click', function () {
@@ -61,7 +66,6 @@ $('.form-control').focusout(function () {
 const animItems = document.querySelectorAll('._anim-items');
 
 if (animItems.length > 0) {
-	window.addEventListener('scroll', animOnScroll);
 	function animOnScroll() {
 		for (let index = 0; index < animItems.length; index++) {
 			const animItem = animItems[index];
@@ -89,8 +93,5 @@ if (animItems.length > 0) {
 			scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 		return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
 	}
-	setTimeout(() => {
-		animOnScroll();
-	}, 1500);
 }
 
