@@ -1745,26 +1745,22 @@ footer{
 /*====================Team==========================*/
 .team{
 	&__col{
-		transform: translate(0px, 50%);
+		transform: translate(0px, 100%);
 		opacity: 0;
 		&:nth-child(1){			
 			transition: transform 0.8s ease 0s,opacity 0.8s ease 0s,
 			.2s border-top ease-out,.2s background-color ease-out;
 		}
 		&:nth-child(2){
-			transition: transform 0.8s ease 0.1s,opacity 0.8s ease 01s,
+			transition: transform 0.8s ease 0.1s,opacity 0.8s ease 0.1s,
 			.2s border-top ease-out,.2s background-color ease-out;
 		}
 		&:nth-child(3){
 			transition: transform 0.8s ease 0.2s,opacity 0.8s ease 0.2s,
 			.2s border-top ease-out,.2s background-color ease-out;
 		}
-		&:nth-child(3){
-			transition: transform 0.8s ease 0.3s,opacity 0.8s ease 0.3s,
-			.2s border-top ease-out,.2s background-color ease-out;
-		}
 		&:nth-child(4){
-			transition: transform 0.8s ease 0.4s,opacity 0.8s ease 0.4s,
+			transition: transform 0.8s ease 0.3s,opacity 0.8s ease 0.3s,
 			.2s border-top ease-out,.2s background-color ease-out;
 		}
 		&._active{

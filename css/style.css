@@ -12275,23 +12275,20 @@ footer .footer__media a:last-child {
 
   /*====================Team==========================*/
   .team__col {
-    transform: translate(0px, 50%);
+    transform: translate(0px, 100%);
     opacity: 0;
   }
   .team__col:nth-child(1) {
     transition: transform 0.8s ease 0s, opacity 0.8s ease 0s, 0.2s border-top ease-out, 0.2s background-color ease-out;
   }
   .team__col:nth-child(2) {
-    transition: transform 0.8s ease 0.1s, opacity 0.8s ease 1s, 0.2s border-top ease-out, 0.2s background-color ease-out;
+    transition: transform 0.8s ease 0.1s, opacity 0.8s ease 0.1s, 0.2s border-top ease-out, 0.2s background-color ease-out;
   }
   .team__col:nth-child(3) {
     transition: transform 0.8s ease 0.2s, opacity 0.8s ease 0.2s, 0.2s border-top ease-out, 0.2s background-color ease-out;
   }
-  .team__col:nth-child(3) {
-    transition: transform 0.8s ease 0.3s, opacity 0.8s ease 0.3s, 0.2s border-top ease-out, 0.2s background-color ease-out;
-  }
   .team__col:nth-child(4) {
-    transition: transform 0.8s ease 0.4s, opacity 0.8s ease 0.4s, 0.2s border-top ease-out, 0.2s background-color ease-out;
+    transition: transform 0.8s ease 0.3s, opacity 0.8s ease 0.3s, 0.2s border-top ease-out, 0.2s background-color ease-out;
   }
   .team__col._active {
     transform: translate(0px, 0px);
